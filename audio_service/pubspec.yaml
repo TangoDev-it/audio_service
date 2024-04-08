@@ -31,8 +31,19 @@ dependencies:
   #     path: audio_service_web
 
   # Use these deps when publishing.
-  audio_service_platform_interface: ^0.1.1
-  audio_service_web: ^0.1.2
+  #audio_service_platform_interface: ^0.1.1
+  audio_service_platform_interface:
+    git:
+      url: https://github.com/TangoDev-it/audio_service.git
+      ref: minor # branch name
+      path: audio_service_platform_interface
+
+  #audio_service_web: ^0.1.2
+  audio_service_web:
+    git:
+      url: https://github.com/TangoDev-it/audio_service.git
+      ref: minor # branch name
+      path: audio_service_web
 
   audio_session: ^0.1.16
   rxdart: '>=0.26.0 <0.28.0'
